@@ -221,6 +221,7 @@ end
 
 def big_shoe_rebounds 
   shoe_array = []
+  largest_shoe = ""
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if attribute == :players 
@@ -235,12 +236,13 @@ def big_shoe_rebounds
       if attribute == :players 
         data.each do |data_item, element|
           if data_item[:shoe] == shoe_array.max()
-            puts data_item[:player_name]
+            largest_shoe = data_item[:player_name]
           end 
         end
       end
     end
   end
+  puts largest_shoe
 end
 
   
