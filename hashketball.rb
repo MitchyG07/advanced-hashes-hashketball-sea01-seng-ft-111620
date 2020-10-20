@@ -242,7 +242,7 @@ def big_shoe_rebounds
       end
     end
   end
-  puts largest_shoe
+  largest_shoe
 end
 
   
