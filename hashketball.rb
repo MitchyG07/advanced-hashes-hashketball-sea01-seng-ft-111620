@@ -235,7 +235,7 @@ def big_shoe_rebounds
       if attribute == :players 
         data.each do |data_item, element|
           if data_item[:shoe] == shoe_array.max()
-            data_item[:player_name]
+            puts data_item[:player_name]
           end 
         end
       end
